@@ -44,11 +44,11 @@ function Contact() {
 
         <div className="flex justify-center gap-8 text-3xl mt-12">
 
-          <a href="#"><FaEnvelope /></a>
+          <a href="kundangond1503@gmail.com"><FaEnvelope /></a>
 
-          <a href="#"><FaGithub /></a>
+          <a href="https://github.com/kundangond1503-debug"><FaGithub /></a>
 
-          <a href="#"><FaLinkedin /></a>
+          <a href="https://www.linkedin.com/in/kundan-kumar-gond-707935309?utm_source=share_via&utm_content=profile&utm_medium=member_android"><FaLinkedin /></a>
 
           <a href="#"><FaInstagram /></a>
 

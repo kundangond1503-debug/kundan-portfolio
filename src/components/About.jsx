@@ -20,22 +20,41 @@ function About() {
           transition={{ duration: 1 }}
           className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-10"
         >
-          <p className="text-lg text-gray-300 leading-9">
-            Hi! I'm <span className="text-cyan-400 font-semibold">Kundan Kumar Gond</span>,
-            a Computer Science student and passionate MERN Stack Developer.
-            I enjoy creating modern, responsive, and user-friendly web
-            applications. I continuously improve my problem-solving skills by
-            practicing Data Structures & Algorithms and building real-world
-            projects.
-          </p>
 
+          {/* FLEX CONTAINER */}
+<div className="flex flex-row items-start gap-10">
+
+  {/* LEFT IMAGE */}
+  <div className="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+  <img
+    src="/kundan10.jpeg"
+    alt="Kundan"
+    className="w-full h-full object-cover rounded-2xl border border-white/20 shadow-xl"
+  />
+</div>
+
+  {/* RIGHT TEXT */}
+  <div className="text-gray-300 leading-8">
+    <p className="text-lg">
+      Hi! I'm <span className="text-cyan-400 font-semibold">Kundan Kumar Gond</span>,
+      a Computer Science student and MERN Stack Developer.
+      I love building modern web apps.
+    </p>
+
+    <p className="mt-4">
+      I improve my skills daily by practicing DSA and building projects.
+    </p>
+  </div>
+
+</div>
+
+          {/* GRID SECTION */}
           <div className="grid md:grid-cols-2 gap-8 mt-10">
 
             <div>
               <h3 className="text-xl font-semibold text-cyan-400 mb-3">
                 Interests
               </h3>
-
               <ul className="space-y-2 text-gray-300">
                 <li>✔ Full-Stack Development</li>
                 <li>✔ MERN Stack</li>
@@ -48,7 +67,6 @@ function About() {
               <h3 className="text-xl font-semibold text-cyan-400 mb-3">
                 Strengths
               </h3>
-
               <ul className="space-y-2 text-gray-300">
                 <li>✔ Problem Solving</li>
                 <li>✔ Team Collaboration</li>
@@ -60,7 +78,6 @@ function About() {
           </div>
 
         </motion.div>
-
       </div>
     </section>
   );

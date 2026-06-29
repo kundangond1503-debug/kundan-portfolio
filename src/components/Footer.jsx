@@ -16,7 +16,7 @@ function Footer() {
         <div className="flex justify-center gap-8 mt-6 text-2xl">
 
           <a
-            href="https://github.com/YOUR_GITHUB"
+            href="https://github.com/kundangond1503-debug"
             target="_blank"
             rel="noreferrer"
             className="hover:text-cyan-400 duration-300"
@@ -25,7 +25,7 @@ function Footer() {
           </a>
 
           <a
-            href="https://linkedin.com/in/YOUR_LINKEDIN"
+            href="https://www.linkedin.com/in/kundan-kumar-gond-707935309?utm_source=share_via&utm_content=profile&utm_medium=member_android"
             target="_blank"
             rel="noreferrer"
             className="hover:text-cyan-400 duration-300"
