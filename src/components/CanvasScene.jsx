@@ -1,6 +1,5 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Computer from "./Computer";
 
 function CanvasScene() {
   return (
@@ -20,7 +19,7 @@ function CanvasScene() {
           color="#06b6d4"
         />
 
-        <Computer />
+        
 
         <OrbitControls
           autoRotate
