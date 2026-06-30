@@ -21,32 +21,35 @@ function About() {
           className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-10"
         >
 
-          {/* FLEX CONTAINER */}
-<div className="flex flex-row items-start gap-10">
+          {/* FLEX CONTAINER (RESPONSIVE FIX) */}
+          <div className="flex flex-col md:flex-row items-center gap-10">
 
-  {/* LEFT IMAGE */}
-  <div className="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
-  <img
-    src="/kundan10.jpeg"
-    alt="Kundan"
-    className="w-full h-full object-cover rounded-2xl border border-white/20 shadow-xl"
-  />
-</div>
+            {/* LEFT IMAGE */}
+            <div className="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+              <img
+                src="/kundan10.jpeg"
+                alt="Kundan"
+                className="w-full h-full object-cover rounded-2xl border border-white/20 shadow-xl"
+              />
+            </div>
 
-  {/* RIGHT TEXT */}
-  <div className="text-gray-300 leading-8">
-    <p className="text-lg">
-      Hi! I'm <span className="text-cyan-400 font-semibold">Kundan Kumar Gond</span>,
-      a Computer Science student and MERN Stack Developer.
-      I love building modern web apps.
-    </p>
+            {/* RIGHT TEXT */}
+            <div className="text-gray-300 leading-8 text-center md:text-left">
+              <p className="text-lg">
+                Hi! I'm{" "}
+                <span className="text-cyan-400 font-semibold">
+                  Kundan Kumar Gond
+                </span>
+                , a Computer Science student and MERN Stack Developer.
+                I love building modern web apps.
+              </p>
 
-    <p className="mt-4">
-      I improve my skills daily by practicing DSA and building projects.
-    </p>
-  </div>
+              <p className="mt-4">
+                I improve my skills daily by practicing DSA and building projects.
+              </p>
+            </div>
 
-</div>
+          </div>
 
           {/* GRID SECTION */}
           <div className="grid md:grid-cols-2 gap-8 mt-10">
