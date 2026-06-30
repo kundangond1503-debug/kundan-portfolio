@@ -6,11 +6,11 @@ function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center bg-gradient-to-b from-[#050816] via-[#0b1120] to-black"
+      className="min-h-screen flex items-center pt-10 pb-0 bg-gradient-to-b from-[#050816] via-[#0b1120] to-black overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10 px-6">
-        {/* Left Side */}
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-8 px-6">
 
+        {/* LEFT */}
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -30,64 +30,59 @@ function Hero() {
               2000,
               "Node.js Developer",
               2000,
-              "Full Stack Web Developer",
+              "Full Stack Developer",
               2000,
             ]}
             wrapper="span"
             speed={50}
             repeat={Infinity}
-            className="block mt-6 text-2xl text-cyan-400 font-semibold"
+            className="block mt-3 text-2xl text-cyan-400 font-semibold"
           />
 
-          <p className="mt-6 text-gray-400 text-lg leading-8">
-            Passionate about building modern, scalable, and user-friendly web
-            applications using the MERN Stack.
+          <p className="mt-3 text-gray-400 text-base leading-6">
+            Passionate about building modern, scalable, and user-friendly web applications using the MERN Stack.
           </p>
 
-          {/* Buttons */}
-
-          <div className="mt-8 flex gap-5">
+          {/* BUTTONS */}
+          <div className="mt-10 flex gap-4">
             <a
               href="#projects"
-              className="px-8 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-600 transition-all duration-300 hover:scale-105"
+              className="px-8 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-600 transition"
             >
               View Projects
             </a>
 
             <a
               href="#contact"
-              className="px-8 py-3 rounded-xl border border-cyan-400 hover:bg-cyan-500 hover:scale-105 transition-all duration-300"
+              className="px-8 py-3 rounded-xl border border-cyan-400 hover:bg-cyan-500 transition"
             >
               Contact Me
             </a>
           </div>
-          <div className="grid grid-cols-3 gap-6 mt-12">
-            <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-5 text-center">
-              <h2 className="text-3xl font-bold text-cyan-400">10+</h2>
-              <p className="text-gray-400 text-sm mt-2">Projects</p>
+
+          {/* STATS */}
+          <div className="grid grid-cols-3 gap-4 mt-16 mb-0 pb-0">
+            <div className="bg-white/5 p-3 rounded-xl text-center">
+              <h2 className="text-2xl text-cyan-400 font-bold">10+</h2>
+              <p className="text-xs text-gray-400">Projects</p>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-5 text-center">
-              <h2 className="text-3xl font-bold text-cyan-400">200+</h2>
-              <p className="text-gray-400 text-sm mt-2">DSA Problems</p>
+            <div className="bg-white/5 p-3 rounded-xl text-center">
+              <h2 className="text-2xl text-cyan-400 font-bold">200+</h2>
+              <p className="text-xs text-gray-400">DSA</p>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-5 text-center">
-              <h2 className="text-3xl font-bold text-cyan-400">2+</h2>
-              <p className="text-gray-400 text-sm mt-2">Years Learning</p>
+            <div className="bg-white/5 p-3 rounded-xl text-center">
+              <h2 className="text-2xl text-cyan-400 font-bold">2+</h2>
+              <p className="text-xs text-gray-400">Years</p>
             </div>
           </div>
+
         </motion.div>
 
-        {/* Right Side */}
-
+        {/* RIGHT */}
         <CanvasScene />
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-7 h-12 border-2 border-cyan-400 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-cyan-400 rounded-full mt-2"></div>
-          </div>
-        </div>
       </div>
     </section>
   );
